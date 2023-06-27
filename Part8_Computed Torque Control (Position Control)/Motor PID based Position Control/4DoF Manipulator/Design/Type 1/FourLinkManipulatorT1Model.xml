@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="fist5" on="06/27/23||08:45:06" using="Simscape Multibody Link Version 7.4" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="centimeter"/>
+<RootAssembly name="4DoF Manipulator Type 1.iam" uid="4DoF Manipulator Type 1.iam_{1A706310-4E36-B212-6CE1-3F8FB4728C5B}" version="{1826D3EE-ED8F-D590-A492-3D70C2F6EBDE}">
+<AssemblyFile name="4DoF Manipulator Type 1.iam" type="Inventor Assembly"/>
+<InstanceTree>
+<Instance name="Manipulator Base Type1:2" grounded="true" uid="Manipulator Base Type1:2" entityUid="Manipulator Base Type1.ipt_{F027DFF8-45E7-678F-2F80-4FABFFD5529A}">
+<Transform>
+<Rotation>1 0 0 0 -2.2204460492503131e-16 -1.0000000000000002 0 1.0000000000000002 -2.2204460492503131e-16</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="Manipulator Link Type 1:1" uid="Manipulator Link Type 1:1" entityUid="Manipulator Link Type 1.ipt_{3B27CC48-4B84-E17E-88EE-5FAC9D7967EC}">
+<Transform>
+<Rotation>1 0 0 0 0 -1.0000000000000002 0 1.0000000000000002 0</Rotation>
+<Translation>0 -9.4368957093138306e-16 4.9999999999999991</Translation>
+</Transform>
+</Instance>
+<Instance name="Manipulator Link Type 1:2" uid="Manipulator Link Type 1:2" entityUid="Manipulator Link Type 1.ipt_{3B27CC48-4B84-E17E-88EE-5FAC9D7967EC}">
+<Transform>
+<Rotation>1 0 0 0 0 -1.0000000000000002 0 1.0000000000000002 0</Rotation>
+<Translation>19.999999999999993 -8.8817841970012523e-16 5.0000000000000009</Translation>
+</Transform>
+</Instance>
+<Instance name="Manipulator Link Type 1:3" uid="Manipulator Link Type 1:3" entityUid="Manipulator Link Type 1.ipt_{3B27CC48-4B84-E17E-88EE-5FAC9D7967EC}">
+<Transform>
+<Rotation>1 0 0 0 0 -1.0000000000000002 0 1.0000000000000002 0</Rotation>
+<Translation>39.999999999999979 -8.8817841970012523e-16 5.0000000000000044</Translation>
+</Transform>
+</Instance>
+<Instance name="Manipulator Link Type 1:4" uid="Manipulator Link Type 1:4" entityUid="Manipulator Link Type 1.ipt_{3B27CC48-4B84-E17E-88EE-5FAC9D7967EC}">
+<Transform>
+<Rotation>1 0 0 0 0 -1.0000000000000002 0 1.0000000000000002 0</Rotation>
+<Translation>59.999999999999979 -8.8817841970012523e-16 5.000000000000008</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Mate:1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Manipulator Base Type1:2</Uid>
+</InstancePath>
+<Position>0 4.9999999999999991 0</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Manipulator Link Type 1:1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Manipulator Base Type1:2</Uid>
+</InstancePath>
+<Position>-4.4408920985006301e-16 4.2499999999999991 0.99999999999999978</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Manipulator Link Type 1:1</Uid>
+</InstancePath>
+<Position>2 8.8817841970012523e-16 0.99999999999999978</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Manipulator Link Type 1:1</Uid>
+</InstancePath>
+<Position>20 3.5527136788005009e-15 0</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Manipulator Link Type 1:2</Uid>
+</InstancePath>
+<Position>0 8.8817841970012523e-16 0</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Manipulator Link Type 1:1</Uid>
+</InstancePath>
+<Position>10 5.3290705182007514e-15 0.99999999999999978</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Manipulator Link Type 1:2</Uid>
+</InstancePath>
+<Position>2 1.7763568394002505e-15 0.99999999999999978</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Manipulator Link Type 1:2</Uid>
+</InstancePath>
+<Position>20 4.4408920985006262e-15 0</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Manipulator Link Type 1:3</Uid>
+</InstancePath>
+<Position>0 8.8817841970012523e-16 0</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Manipulator Link Type 1:2</Uid>
+</InstancePath>
+<Position>10 6.2172489379008766e-15 0.99999999999999978</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Manipulator Link Type 1:3</Uid>
+</InstancePath>
+<Position>2 1.7763568394002505e-15 0.99999999999999978</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Manipulator Link Type 1:3</Uid>
+</InstancePath>
+<Position>20 4.4408920985006262e-15 0</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Manipulator Link Type 1:4</Uid>
+</InstancePath>
+<Position>0 8.8817841970012523e-16 0</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Mate:8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Manipulator Link Type 1:3</Uid>
+</InstancePath>
+<Position>10 6.2172489379008766e-15 0.99999999999999978</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Manipulator Link Type 1:4</Uid>
+</InstancePath>
+<Position>2 1.7763568394002505e-15 0.99999999999999978</Position>
+<Axis>0 -2.2204460492503121e-16 0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+<Joints>
+</Joints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Manipulator Base Type1.ipt" uid="Manipulator Base Type1.ipt_{F027DFF8-45E7-678F-2F80-4FABFFD5529A}" version="{BE21773C-E357-7B6F-D6DC-E64DD1488724}">
+<ModelUnits mass="lbmass" length="millimeter"/>
+<PartFile name="Manipulator Base Type1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.19034402528821012</Mass>
+<CenterOfMass>3.1454345726307222e-11 2.5649353884463175 0</CenterOfMass>
+<Inertia>1.0627847053576285 0.60856214729689895 1.3082008357957218 0 0 -1.4578628812450616e-11</Inertia>
+</MassProperties>
+<GeometryFile name="Manipulator Base Type1_ipt_c2f097c6.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Manipulator Link Type 1.ipt" uid="Manipulator Link Type 1.ipt_{3B27CC48-4B84-E17E-88EE-5FAC9D7967EC}" version="{1C878D7E-D705-05FB-2304-40E627FCE6AA}">
+<ModelUnits mass="lbmass" length="millimeter"/>
+<PartFile name="Manipulator Link Type 1.ipt" type="Inventor Part"/>
+<MassProperties>
+<Mass>0.82103594007331859</Mass>
+<CenterOfMass>7.7881858681719685 2.9908991493936526e-15 0</CenterOfMass>
+<Inertia>3.0920789481839726 36.485065172469149 36.675911037014295 -1.2278178473934532e-15 4.9112713895738127e-15 -1.0342681121924843e-14</Inertia>
+</MassProperties>
+<GeometryFile name="Manipulator Link Type 1_ipt_55825f1b.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0" g="0" b="0" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.14999999999999999</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
