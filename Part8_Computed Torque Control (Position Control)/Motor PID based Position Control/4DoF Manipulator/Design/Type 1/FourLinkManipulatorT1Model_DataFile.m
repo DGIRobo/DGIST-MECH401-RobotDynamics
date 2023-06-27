@@ -26,7 +26,7 @@ smiData.RigidTransform(1).ID = "B[Manipulator Base Type1:2:-:Manipulator Link Ty
 
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
-smiData.RigidTransform(2).translation = [0 -1.5777218104420236e-30 -1.332267629550188e-14];  % mm
+smiData.RigidTransform(2).translation = [0 -1.5777218104420236e-30 -9.4368957093138322e-15];  % mm
 smiData.RigidTransform(2).angle = 0;  % rad
 smiData.RigidTransform(2).axis = [0 0 0];
 smiData.RigidTransform(2).ID = "F[Manipulator Base Type1:2:-:Manipulator Link Type 1:1]";
@@ -40,38 +40,38 @@ smiData.RigidTransform(3).ID = "B[Manipulator Link Type 1:1:-:Manipulator Link T
 
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
-smiData.RigidTransform(4).translation = [5.6843418860808015e-14 2.1316282072803009e-14 -2.2204460492503099e-15];  % mm
+smiData.RigidTransform(4).translation = [5.6843418860808015e-14 2.1316282072803009e-14 5.5511151231258143e-16];  % mm
 smiData.RigidTransform(4).angle = 2.2204460492503131e-16;  % rad
-smiData.RigidTransform(4).axis = [1 -0 -0];
+smiData.RigidTransform(4).axis = [1 0 0];
 smiData.RigidTransform(4).ID = "F[Manipulator Link Type 1:1:-:Manipulator Link Type 1:2]";
 
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
-smiData.RigidTransform(5).translation = [0 8.8817841970012523e-15 0];  % mm
+smiData.RigidTransform(5).translation = [200 4.4408920985006262e-14 0];  % mm
 smiData.RigidTransform(5).angle = 2.2204460492503126e-16;  % rad
 smiData.RigidTransform(5).axis = [1 0 0];
-smiData.RigidTransform(5).ID = "B[Manipulator Link Type 1:3:-:Manipulator Link Type 1:2]";
+smiData.RigidTransform(5).ID = "B[Manipulator Link Type 1:2:-:Manipulator Link Type 1:3]";
 
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
-smiData.RigidTransform(6).translation = [199.99999999999983 4.2632564145606017e-14 -6.3108872417680944e-30];  % mm
+smiData.RigidTransform(6).translation = [1.7053025658242404e-13 7.1054273576010034e-15 4.7331654313260708e-30];  % mm
 smiData.RigidTransform(6).angle = 2.2204460492503131e-16;  % rad
 smiData.RigidTransform(6).axis = [1 0 0];
-smiData.RigidTransform(6).ID = "F[Manipulator Link Type 1:3:-:Manipulator Link Type 1:2]";
+smiData.RigidTransform(6).ID = "F[Manipulator Link Type 1:2:-:Manipulator Link Type 1:3]";
 
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
-smiData.RigidTransform(7).translation = [7.1054273576010019e-14 -8.8817841970012523e-15 0];  % mm
-smiData.RigidTransform(7).angle = 1.387778780781449e-15;  % rad
-smiData.RigidTransform(7).axis = [0 1 0];
-smiData.RigidTransform(7).ID = "B[Manipulator Link Type 1:4:-:Manipulator Link Type 1:3]";
+smiData.RigidTransform(7).translation = [200 4.4408920985006262e-14 0];  % mm
+smiData.RigidTransform(7).angle = 2.2204460492503126e-16;  % rad
+smiData.RigidTransform(7).axis = [1 0 0];
+smiData.RigidTransform(7).ID = "B[Manipulator Link Type 1:3:-:Manipulator Link Type 1:4]";
 
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
-smiData.RigidTransform(8).translation = [200 6.3948846218409042e-14 5.9952043329758403e-14];  % mm
-smiData.RigidTransform(8).angle = 2.3746063717957393e-15;  % rad
-smiData.RigidTransform(8).axis = [0.56104777843356468 0.82778341993226801 5.5141452732705486e-16];
-smiData.RigidTransform(8).ID = "F[Manipulator Link Type 1:4:-:Manipulator Link Type 1:3]";
+smiData.RigidTransform(8).translation = [0 7.1054273576010034e-15 4.7331654313260708e-30];  % mm
+smiData.RigidTransform(8).angle = 2.2204460492503131e-16;  % rad
+smiData.RigidTransform(8).axis = [1 0 0];
+smiData.RigidTransform(8).ID = "F[Manipulator Link Type 1:3:-:Manipulator Link Type 1:4]";
 
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
@@ -121,15 +121,18 @@ smiData.Solid(2).ID = "Manipulator Link Type 1.ipt_{3B27CC48-4B84-E17E-88EE-5FAC
 %Position Target (Pos)
 
 %Initialize the RevoluteJoint structure array by filling in null values.
-smiData.RevoluteJoint(3).Rz.Pos = 0.0;
-smiData.RevoluteJoint(3).ID = "";
+smiData.RevoluteJoint(4).Rz.Pos = 0.0;
+smiData.RevoluteJoint(4).ID = "";
 
 smiData.RevoluteJoint(1).Rz.Pos = 0;  % deg
 smiData.RevoluteJoint(1).ID = "[Manipulator Base Type1:2:-:Manipulator Link Type 1:1]";
 
 smiData.RevoluteJoint(2).Rz.Pos = 0;  % deg
-smiData.RevoluteJoint(2).ID = "[Manipulator Link Type 1:3:-:Manipulator Link Type 1:2]";
+smiData.RevoluteJoint(2).ID = "[Manipulator Link Type 1:1:-:Manipulator Link Type 1:2]";
 
-smiData.RevoluteJoint(3).Rz.Pos = -6.0144857305450261e-14;  % deg
-smiData.RevoluteJoint(3).ID = "[Manipulator Link Type 1:4:-:Manipulator Link Type 1:3]";
+smiData.RevoluteJoint(3).Rz.Pos = 0;  % deg
+smiData.RevoluteJoint(3).ID = "[Manipulator Link Type 1:2:-:Manipulator Link Type 1:3]";
+
+smiData.RevoluteJoint(4).Rz.Pos = 0;  % deg
+smiData.RevoluteJoint(4).ID = "[Manipulator Link Type 1:3:-:Manipulator Link Type 1:4]";
 
