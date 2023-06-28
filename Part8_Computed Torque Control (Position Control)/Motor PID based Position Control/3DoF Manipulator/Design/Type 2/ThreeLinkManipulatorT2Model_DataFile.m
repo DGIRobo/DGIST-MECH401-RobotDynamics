@@ -12,10 +12,10 @@
 %============= RigidTransform =============%
 
 %Initialize the RigidTransform structure array by filling in null values.
-smiData.RigidTransform(9).translation = [0.0 0.0 0.0];
-smiData.RigidTransform(9).angle = 0.0;
-smiData.RigidTransform(9).axis = [0.0 0.0 0.0];
-smiData.RigidTransform(9).ID = "";
+smiData.RigidTransform(7).translation = [0.0 0.0 0.0];
+smiData.RigidTransform(7).angle = 0.0;
+smiData.RigidTransform(7).axis = [0.0 0.0 0.0];
+smiData.RigidTransform(7).ID = "";
 
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
@@ -61,24 +61,10 @@ smiData.RigidTransform(6).ID = "F[Manipulator Link Type 2:1:-:Manipulator Link T
 
 %Translation Method - Cartesian
 %Rotation Method - Arbitrary Axis
-smiData.RigidTransform(7).translation = [200 0 0];  % mm
-smiData.RigidTransform(7).angle = 2.220445979114425e-16;  % rad
-smiData.RigidTransform(7).axis = [1 0 0];
-smiData.RigidTransform(7).ID = "B[Manipulator Link Type 1:2:-:Manipulator Link Type 1:3]";
-
-%Translation Method - Cartesian
-%Rotation Method - Arbitrary Axis
-smiData.RigidTransform(8).translation = [-6.1695496243205441e-13 -5.6746301083394981e-14 4.7899816561208634e-13];  % mm
-smiData.RigidTransform(8).angle = 9.7712303502664662e-17;  % rad
-smiData.RigidTransform(8).axis = [0.86769710379191123 -0.49709328709119494 -2.1072948322609446e-17];
-smiData.RigidTransform(8).ID = "F[Manipulator Link Type 1:2:-:Manipulator Link Type 1:3]";
-
-%Translation Method - Cartesian
-%Rotation Method - Arbitrary Axis
-smiData.RigidTransform(9).translation = [0 0 0];  % mm
-smiData.RigidTransform(9).angle = 0;  % rad
-smiData.RigidTransform(9).axis = [0 0 0];
-smiData.RigidTransform(9).ID = "RootGround[Manipulator Base Type2:1]";
+smiData.RigidTransform(7).translation = [0 0 0];  % mm
+smiData.RigidTransform(7).angle = 0;  % rad
+smiData.RigidTransform(7).axis = [0 0 0];
+smiData.RigidTransform(7).ID = "RootGround[Manipulator Base Type2:1]";
 
 
 %============= Solid =============%
@@ -131,8 +117,8 @@ smiData.Solid(3).ID = "Manipulator Link Type 1.ipt_{3B27CC48-4B84-E17E-88EE-5FAC
 %Position Target (Pos)
 
 %Initialize the RevoluteJoint structure array by filling in null values.
-smiData.RevoluteJoint(4).Rz.Pos = 0.0;
-smiData.RevoluteJoint(4).ID = "";
+smiData.RevoluteJoint(3).Rz.Pos = 0.0;
+smiData.RevoluteJoint(3).ID = "";
 
 smiData.RevoluteJoint(1).Rz.Pos = -1.0080633524325382;  % deg
 smiData.RevoluteJoint(1).ID = "[Manipulator Base Type2:1:-:Manipulator Link Type 2:1]";
@@ -142,7 +128,4 @@ smiData.RevoluteJoint(2).ID = "[Manipulator Link Type 1:1:-:Manipulator Link Typ
 
 smiData.RevoluteJoint(3).Rz.Pos = 89.991254711653468;  % deg
 smiData.RevoluteJoint(3).ID = "[Manipulator Link Type 2:1:-:Manipulator Link Type 1:1]";
-
-smiData.RevoluteJoint(4).Rz.Pos = -0.00017190489404926844;  % deg
-smiData.RevoluteJoint(4).ID = "[Manipulator Link Type 1:2:-:Manipulator Link Type 1:3]";
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<Created by="fist5" on="06/27/23||07:52:54" using="Simscape Multibody Link Version 7.4" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
+<Created by="fist5" on="06/28/23||18:24:30" using="Simscape Multibody Link Version 7.4" from="Autodesk Inventor 2021 (Build 250183000, 183)"/>
 <ModelUnits mass="kilogram" length="millimeter"/>
 <DataUnits mass="kilogram" length="centimeter"/>
-<RootAssembly name="3DoF Manipulator Type 2.iam" uid="3DoF Manipulator Type 2.iam_{B32B2D99-4D10-EE2C-17B7-F5A269EE0376}" version="{6F8C117B-AC18-A22E-9BB2-68872F48FA21}">
+<RootAssembly name="3DoF Manipulator Type 2.iam" uid="3DoF Manipulator Type 2.iam_{B32B2D99-4D10-EE2C-17B7-F5A269EE0376}" version="{6800B1E2-9C89-443A-5271-55F94F9034DD}">
 <AssemblyFile name="3DoF Manipulator Type 2.iam" type="Inventor Assembly"/>
 <InstanceTree>
 <Instance name="Manipulator Base Type2:1" grounded="true" uid="Manipulator Base Type2:1" entityUid="Manipulator Base Type2.ipt_{4434D498-4A60-6A42-9F25-E3AD5F237DEF}">
@@ -28,12 +28,6 @@
 <Transform>
 <Rotation>0.9998452162775624 -0.00016039131349601581 -0.017593116878515735 -0.017593116652150919 2.8222199219311603e-06 -0.99984522914224039 0.00016041614123979225 0.99999998713333083 -1.0100825544360169e-16</Rotation>
 <Translation>19.996904349908974 -0.3518623334715798 21.503052681501845</Translation>
-</Transform>
-</Instance>
-<Instance name="Manipulator Link Type 1:3" uid="Manipulator Link Type 1:3" entityUid="Manipulator Link Type 1.ipt_{3B27CC48-4B84-E17E-88EE-5FAC9D7967EC}">
-<Transform>
-<Rotation>0.99984521675428528 -0.00015739147149243816 -0.017593116878515686 -0.017593116660539206 2.769435181527074e-06 -0.9998452291422405 0.00015741583487622726 0.99999998761012754 0</Rotation>
-<Translation>39.993808675460279 -0.70372466651455134 21.506261004326646</Translation>
 </Transform>
 </Instance>
 </InstanceTree>
@@ -132,38 +126,6 @@
 </InstancePath>
 <Position>1.9999999999999964 -3.5527136788005009e-15 0.99999999999999989</Position>
 <Axis>0 -2.220445979114425e-16 1</Axis>
-</ConstraintGeometry>
-</Coincident>
-<Coincident name="Mate:7">
-<ConstraintGeometry geomType="cylinder">
-<InstancePath>
-<Uid>Manipulator Link Type 1:2</Uid>
-</InstancePath>
-<Position>20 0 0</Position>
-<Axis>0 -2.220445979114425e-16 1</Axis>
-</ConstraintGeometry>
-<ConstraintGeometry geomType="cylinder">
-<InstancePath>
-<Uid>Manipulator Link Type 1:3</Uid>
-</InstancePath>
-<Position>0 0 -1.1102230246255352e-16</Position>
-<Axis>0 -2.2204459967663513e-16 0.99999999999999989</Axis>
-</ConstraintGeometry>
-</Coincident>
-<Coincident name="Mate:8">
-<ConstraintGeometry geomType="plane">
-<InstancePath>
-<Uid>Manipulator Link Type 1:2</Uid>
-</InstancePath>
-<Position>10 3.5527136788005009e-15 1.0000000000000002</Position>
-<Axis>0 -2.220445979114425e-16 1</Axis>
-</ConstraintGeometry>
-<ConstraintGeometry geomType="plane">
-<InstancePath>
-<Uid>Manipulator Link Type 1:3</Uid>
-</InstancePath>
-<Position>2.0000000000000071 0 1.0000000000000002</Position>
-<Axis>0 -2.2204459967663513e-16 0.99999999999999989</Axis>
 </ConstraintGeometry>
 </Coincident>
 </Constraints>
